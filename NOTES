@@ -1,9 +1,0 @@
-# All the task polygons for a project
-
-ogr2ogr -s_srs "EPSG:4326" -t_srs "EPSG:4326" -progress -overwrite -f "GeoJSON" 8345-tasks.geojson PG:"dbname=tmsnap" -sql "SELECT id AS tid,ST_AsText(geometry) FROM tasks WHERE project_id=8359"
-
-ogr2ogr -s_srs "EPSG:4326" -t_srs "EPSG:4326" -progress -overwrite -f "GeoJSON" 8345-project.geojson PG:"dbname=tmsnap" -nln "project" -sql "SELECT id AS tmid,ST_AsText(geometry) FROM projects WHERE id=8359"
-
-ogr2ogr -s_srs "EPSG:4326" -t_srs "EPSG:4326" -progress -overwrite -f "GeoJSON" 8345-project.geojson PG:"dbname=tmsnap" -nln "tasks" -sql "SELECT tasks.id AS tmid,ST_AsText(tasks.geometry) FROM projects,tasks WHERE id=8359"
-
-SELECT tasks.id AS tid,projects.id AS pid,ST_AsText(tasks.geometry) FROM tasks,projects WHERE tasks.project_id=8345 AND projects.id=8345;

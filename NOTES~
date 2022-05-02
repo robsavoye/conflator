@@ -1,2 +1,0 @@
-SELECT ST_AsText(geometry) FROM tasks WHERE project_id=222;
-
