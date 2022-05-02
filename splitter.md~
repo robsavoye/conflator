@@ -1,0 +1,118 @@
+# Splitter.py
+
+Splitter is a utility to chop up large files into smaller, more
+manageable sizes.
+
+# Usage
+
+    --help(-h)     Get command line options
+    --verbose(-v)  Enable verbose output
+    --infile(-i)   Input data file in any OGR supported format OR
+    --tmdatabase(-t) Tasking Manager database to split
+    --splittasks(-s) When using the Tasking Manager database, split into tasks
+    --buildings(-b) Building footprint database to split
+    --project(-p)  Tasking Manager project ID to get boundaries
+    --outdir(-o)   Output directory for output files (default "/tmp")
+    --boundary(-b) Specify a multipolygon as a boundaries, one file for each polygon
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
